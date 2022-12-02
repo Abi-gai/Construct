@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --global-font-family: "Overpass", sans-serif;
+}
+
+* {
+  font-family: var(--global-font-family);
+  transition: 0.5s;
+}
+
+body {
+  font-family: var(--global-font-family);
+  transition: 0.5s;
+  background-image: url("../../images/pexels-pixabay-159306.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0px 0px;
+}
+
+.login-form-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 45px 0px;
+  padding: 50px 25px;
+  background: #ffffff;
+  border-radius: 10px;
+
+  border: 0px solid gray;
+  box-shadow: -1px 5px 5px -2px#e8e8e8a4;
+}
+
+.login-form-container img {
+  width: 48px;
+  height: 48px;
+  padding-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: 280px;
+  padding: 15px 25px;
+}
+
+form label {
+  float: left;
+  letter-spacing: 0.5em;
+  text-align: left;
+  font-size: 13px;
+}
+
+form input {
+  outline: none;
+  border: none;
+  padding: 5px;
+  margin: 10px 0px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 5px 1px #adadad8c;
+  transition: 0.3s;
+  font-weight: 500;
+  width: 360px;
+  height: 40px;
+  transition: 0.5s;
+}
+
+form input:focus,
+form input:active,
+form input::after {
+  border: 1px solid rgb(185, 185, 185);
+  border-width: thin;
+  transition: 0.5s;
+}
+
+.submit-btn {
+  outline: none;
+  border: none;
+  width: 360px;
+  height: max-content;
+  letter-spacing: 0.7em;
+
+  transition: 0.5s;
+  cursor: pointer;
+  margin: 2rem 0;
+  padding: 1rem 0;
+  text-align: center;
+  background-color: #e5641a;
+  box-shadow: 2px 5px 5px 1px #cccccc8c;
+  color: #fff;
+}
+
+.submit-btn:hover {
+  border-radius: 5px;
+  transition: 0.5s;
+  font-weight: 700;
+  font-size: 16px;
+  filter: blur(0.5px);
+  margin: 20px 0px;
+}
+
+form .link {
+  text-decoration: none;
+  color: #e5641a;
+  font: 700;
+  font-size: 13px;
+}
+
+form .link:hover {
+  color: #000;
+}
+.errors {
+  color: #d74f00;
+  font-weight: 500;
+  font-style: italic;
+}
